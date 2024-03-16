@@ -27,7 +27,6 @@ body {
   --fw-700: 700;
 }
 
-
 @font-face {
   font-family: "Inter";
   font-weight: 400;
@@ -118,7 +117,9 @@ img {
   color: var(--neutral-white);
   font-size: 0.9rem;
   font-weight: var(--fw-600);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .scl-pfl-link:hover {
@@ -128,7 +129,7 @@ img {
 
 .attribution {
   color: var(--neutral-white);
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .attribution-link {
@@ -136,7 +137,7 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 90em){
+@media screen and (min-width: 90em) {
   .scl-pfl {
     width: 25rem;
   }
