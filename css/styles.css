@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+
+:root {
+  --primary-green: hsl(75, 94%, 57%);
+  --neutral-white: hsl(0, 0%, 100%);
+  --neutral-grey: hsl(0, 0%, 20%);
+  --neutral-dark-grey: hsl(0, 0%, 12%);
+  --neutral-off-black: hsl(0, 0%, 8%);
+  --fz-paragraph: 0.875rem;
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/static/Inter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/static/Inter-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../assets/fonts/static/Inter-Bold.ttf");
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--neutral-off-black);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.scl-pfl {
+  background-color: var(--neutral-dark-grey);
+  border-radius: 0.5rem;
+  padding-block-start: 1.5rem;
+  padding-block-end: 0.5rem;
+  padding-inline: 1rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.scl-pfl-head {
+  text-align: center;
+}
+
+.scl-pfl-avatar {
+  max-width: 5.5rem;
+  border-radius: 50%;
+}
+
+.scl-pfl-name {
+  font-size: 1.3rem;
+  font-weight: var(--fw-700);
+  color: var(--neutral-white);
+  margin-block-end: 0.7rem;
+}
+
+.scl-pfl-location {
+  color: var(--primary-green);
+  font-size: var(--fz-paragraph);
+  font-weight: var(--fw-600);
+  margin: 0;
+}
+
+.scl-pfl-desc {
+  font-size: var(--fz-paragraph);
+  color: var(--neutral-white);
+}
+
+.scl-pfl-links {
+  text-align: center;
+}
+
+.scl-pfl-link {
+  display: block;
+  background-color: var(--neutral-grey);
+  margin-block-end: 1rem;
+  padding-block: 0.8rem;
+  padding-inline: 5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--neutral-white);
+  font-size: 0.9rem;
+  font-weight: var(--fw-600);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.scl-pfl-link:hover {
+  background-color: var(--primary-green);
+  color: var(--neutral-off-black);
+}
+
+.attribution {
+  color: var(--neutral-white);
+  font-size: 0.85rem;
+}
+
+.attribution-link {
+  color: var(--primary-green);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 90em) {
+  .scl-pfl {
+    width: 25rem;
+  }
+}
